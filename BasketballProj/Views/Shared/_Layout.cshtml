@@ -5,20 +5,17 @@
     <title>Basket|@ViewBag.Title</title>
     <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="Layout-body">
-
-    <header class="header-1">
-        <h2>@ViewBag.Title</h2>
-        <div class="header"></div>
+<body>
+    <header class="header">
+        <div class="back-button"><a href="/Home/Index"><img src="\imgs\logo.jpg" width="6%" /></a></div>
+        <div class="header-container">@ViewBag.Title</div>
     </header>
 
-    <div><a href="/Home/Index">На домашнюю страницу</a></div>
-
-    <div>
+    <div class="main-content">
         @RenderBody()
     </div>
 
-    <footer>
+    <footer class="footer">
         
     </footer>
 
