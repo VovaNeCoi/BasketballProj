@@ -2,10 +2,12 @@
     ViewBag.Title = "Информация о команде";
     Layout = "/Views/Shared/_Layout.cshtml";
 }
-<div>Подробно о команде: Название команды из БД</div>
-
 <div>
-    Информация о команде
+    <img src="#" alt="Лого команды"><br/>
+    Название команды
+</div>
+<div>
+    Дивизион и конференция
 </div>
 
 <div>
@@ -14,13 +16,12 @@
     <button class="tablinks" onclick="openDistrict(event, 'Lineup')">Первый состав</button>
 </div>
 <div id="Roster" class="tabcontent">
-    <p>Восточная конференция</p>
     <table>
         <tr>
             <td>Дата игры</td>
             <td>Тип игры</td>
             <td>Соперник</td>
-            <td>Время нчала</td>
+            <td>Время начала</td>
             <td>Результат</td>
             <td>Место проведения</td>
             <td>Статус</td>
@@ -36,8 +37,7 @@
         </tr>
     </table>
 </div>
-<div id="Matchup" class="tabcontent">
-    <p>Восточная конференция</p>
+<div id="Matchup" class="tabcontent"> 
     <table>
         <tr>
             <td>Номер в команде</td>
@@ -60,8 +60,7 @@
     </table>
 </div>
 <div id="Lineup" class="tabcontent">
-    <p>Восточная конференция</p>
-    <table border="0px">
+    <table class="tableInTeaminfo">
          <tr>
             <th>игроки</th>
             <th>игроки</th>

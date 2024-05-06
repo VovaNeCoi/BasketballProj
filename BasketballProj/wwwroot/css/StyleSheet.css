@@ -105,4 +105,13 @@ td {
     text-align: center;
     padding: 6px 12px;
 }
+.tableInTeaminfo {
+    border: 0px solid white;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    background-image: url('~/imgs/logo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
