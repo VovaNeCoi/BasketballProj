@@ -1,9 +1,76 @@
 ﻿@{
-    ViewBag.Title = "Список команд";
+    ViewBag.Title = "Информация о команде";
     Layout = "/Views/Shared/_Layout.cshtml";
 }
 <div>Подробно о команде: Название команды из БД</div>
 
 <div>
     Информация о команде
+</div>
+
+<div>
+    <button class="tablinks" onclick="openDistrict(event, 'Roster')">Состав команды</button>
+    <button class="tablinks" onclick="openDistrict(event, 'Matchup')">Матчи</button>
+    <button class="tablinks" onclick="openDistrict(event, 'Lineup')">Первый состав</button>
+</div>
+<div id="Roster" class="tabcontent">
+    <p>Восточная конференция</p>
+    <table>
+        <tr>
+            <td>Дата игры</td>
+            <td>Тип игры</td>
+            <td>Соперник</td>
+            <td>Время нчала</td>
+            <td>Результат</td>
+            <td>Место проведения</td>
+            <td>Статус</td>
+        </tr>
+        <tr>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+        </tr>
+    </table>
+</div>
+<div id="Matchup" class="tabcontent">
+    <p>Восточная конференция</p>
+    <table>
+        <tr>
+            <td>Номер в команде</td>
+            <td>Игрок</td>
+            <td>Позиция</td>
+            <td>Дата рождения</td>
+            <td>Колледж</td>
+            <td>Опыт</td>
+            <td>Оплата</td>
+        </tr>
+        <tr>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+        </tr>
+    </table>
+</div>
+<div id="Lineup" class="tabcontent">
+    <p>Восточная конференция</p>
+    <table border="0px">
+         <tr>
+            <th>игроки</th>
+            <th>игроки</th>
+            <th>игроки</th>
+        </tr>
+        <tr>
+            <th>игроки</th>
+            <th>   </th>
+            <th>игроки</th>
+        </tr>
+    </table>
 </div>

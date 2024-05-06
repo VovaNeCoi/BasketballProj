@@ -2,8 +2,16 @@
     ViewBag.Title = "Домашняя страница";
     Layout = "/Views/Shared/_Layout.cshtml";
 }
-<div>Это домашняя/главная страница</div>
+
+<!--div>Это домашняя/главная страница</div-->
+<h1>
+    NBA Management System
+</h1>
 <div>
-    <a href="/Pages/Admin">Перейти на страницу админа</a> |
-    <a href="/Pages/Visitor">Перейти на страницу посетителя</a>
+    Добро пожаловать в систему управления баскетбольными матчами.<br/>
+    Вы будете перенаправлены на разные страницы в соответствии с Вашей ролью, нажав кнопки ниже.
+</div>
+<div>    
+    <a href="/Pages/Admin" class="button-style">Администратор</a> <br />
+    <a href="/Pages/Visitor" class="button-style">Посетитель</a>
 </div>

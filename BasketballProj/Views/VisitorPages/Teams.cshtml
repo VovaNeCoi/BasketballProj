@@ -2,8 +2,42 @@
     ViewBag.Title = "Список команд";
     Layout = "/Views/Shared/_Layout.cshtml";
 }
-<div>Список команд</div>
+<!--div>Список команд</!div-->
 
 <div>
     <a href="/VisitorPages/TeamInfo">К информации о команде</a>
+</div>
+<div>
+    <button class="tablinks" onclick="openDistrict(event, 'Eastern')">Восточная конференция</button>
+    <button class="tablinks" onclick="openDistrict(event, 'Western')">Западная конференция</button>
+</div>
+<div id="Eastern" class="tabcontent">
+    <p>Восточная конференция</p>
+    <table>
+        <tr>
+            <td>Атлантический дивизион</td>
+            <td>Центальный дивизион</td>
+            <td>Юго-Восточный дивизион</td>
+        </tr>
+        <tr>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+        </tr>
+    </table>
+</div>
+<div id="Western" class="tabcontent">
+    <p>Западная конференция</p>
+    <table>
+        <tr>
+            <td>Северо-Западный дивизион</td>
+            <td>Тихоокеанский дивизион</td>
+            <td>Юго-Западный дивизион</td>
+        </tr>
+        <tr>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+            <th>Вывод из бд</th>
+        </tr>
+    </table>
 </div>
