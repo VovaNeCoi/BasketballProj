@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BasketballProj.Data.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BasketballProj.Controllers
 {
@@ -12,8 +13,20 @@ namespace BasketballProj.Controllers
 
 
         public IActionResult TechnicalAdPage() => View();
-        public IActionResult TeamsReportsManaging() => View();
-        public IActionResult ExecutionsManaging() => View();
+        public IActionResult ExecutionsManaging()
+        {
+            return View();
+        }
+        private readonly ITeamsReportsManaging _allTeamsForReports;
+        public AdminPagesController(ITeamsReportsManaging iTeamsReports)
+        {
+            _allTeamsForReports = iTeamsReports;
+        }
+        public ViewResult TeamsReportsList()
+        {
+            var teams = _allTeamsForReports.teams;
+            return View(teams);
+        }
 
     }
 }

@@ -1,0 +1,19 @@
+﻿@using BasketballProj.Models.DB
+@model IEnumerable<Team>
+@{
+    ViewBag.Title = "Список уведомлений??";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "TeamsReportsList";
+}
+<table>
+    <tr><th>Position</th><th>TeamName</th><th>Division</th><th>Logo</th></tr>
+    @{
+        int counter = 1;
+        foreach (var item in Model)
+        {
+            <tr><td>@counter</td><td>@item.TeamName</td><td>@item.PlayerStatistics</td><td>@item.Logo</td></tr>
+            counter++;
+        }
+}
+</table>
+
